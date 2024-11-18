@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16, *)
 struct ListBullet: View {
   private let image: Image
 

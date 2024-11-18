@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16, *)
 struct BlockquoteView: View {
   @Environment(\.theme.blockquote) private var blockquote
 

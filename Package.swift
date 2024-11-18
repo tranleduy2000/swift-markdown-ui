@@ -1,14 +1,14 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.7
 
 import PackageDescription
 
 let package = Package(
   name: "swift-markdown-ui",
   platforms: [
-    .macOS(.v12),
-    .iOS(.v15),
-    .tvOS(.v15),
-    .macCatalyst(.v15),
+    .macOS(.v13),
+    .iOS(.v14),
+    .tvOS(.v14),
+    .macCatalyst(.v14),
     .watchOS(.v8),
   ],
   products: [
@@ -21,6 +21,8 @@ let package = Package(
     .package(url: "https://github.com/gonzalezreal/NetworkImage", from: "6.0.0"),
     .package(url: "https://github.com/pointfreeco/swift-snapshot-testing", from: "1.10.0"),
     .package(url: "https://github.com/swiftlang/swift-cmark", from: "0.4.0"),
+    .package(url: "https://github.com/tranleduy2000/LaTeXSwiftUI.git", revision: "446f0f79a523c6542a06fdde0bbf32569a53fc2b"),
+    //.package(path: "../LaTeXSwiftUI"),
   ],
   targets: [
     .target(
@@ -29,6 +31,7 @@ let package = Package(
         .product(name: "cmark-gfm", package: "swift-cmark"),
         .product(name: "cmark-gfm-extensions", package: "swift-cmark"),
         .product(name: "NetworkImage", package: "NetworkImage"),
+        .product(name: "LaTeXSwiftUI", package: "LaTeXSwiftUI"),
       ]
     ),
     .testTarget(

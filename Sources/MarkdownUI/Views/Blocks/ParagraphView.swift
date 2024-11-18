@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16, *)
 struct ParagraphView: View {
   @Environment(\.theme.paragraph) private var paragraph
 

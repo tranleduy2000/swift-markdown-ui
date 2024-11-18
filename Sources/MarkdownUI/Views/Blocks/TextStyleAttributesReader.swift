@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16, *)
 struct TextStyleAttributesReader<Content: View>: View {
   @Environment(\.textStyle) private var textStyle
 

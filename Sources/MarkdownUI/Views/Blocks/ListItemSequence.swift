@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16, *)
 struct ListItemSequence: View {
   private let items: [RawListItem]
   private let start: Int

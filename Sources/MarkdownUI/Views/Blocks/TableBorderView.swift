@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16, *)
 struct TableBorderView: View {
   @Environment(\.tableBorderStyle) private var tableBorderStyle
 

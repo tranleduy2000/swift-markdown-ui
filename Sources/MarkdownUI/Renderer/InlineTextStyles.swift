@@ -1,5 +1,6 @@
 import Foundation
 
+@available(iOS 16, *)
 struct InlineTextStyles {
   let code: TextStyle
   let emphasis: TextStyle

@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16, *)
 struct TaskListItemView: View {
   @Environment(\.theme.listItem) private var listItem
   @Environment(\.theme.taskListMarker) private var taskListMarker

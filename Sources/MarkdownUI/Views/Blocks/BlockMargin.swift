@@ -7,6 +7,7 @@ struct BlockMargin: Equatable {
   static let unspecified = BlockMargin()
 }
 
+@available(iOS 16, *)
 extension View {
   /// Sets the preferred top margin for the block content in this view.
   ///

@@ -17,7 +17,7 @@ extension DefaultInlineImageProvider {
 }
 
 // MARK: - Deprecated after 2.0.2:
-
+@available(iOS 16, *)
 extension BlockStyle where Configuration == BlockConfiguration {
   @available(
     *,
@@ -42,6 +42,7 @@ extension BlockStyle where Configuration == BlockConfiguration {
   }
 }
 
+@available(iOS 16, *)
 extension View {
   @available(
     *,
@@ -79,6 +80,7 @@ extension View {
   }
 }
 
+@available(iOS 16, *)
 extension Theme {
   @available(
     *,
@@ -333,6 +335,7 @@ public struct MarkdownImageHandler {
   }
 }
 
+@available(iOS 16, *)
 extension Markdown {
   @available(
     *,

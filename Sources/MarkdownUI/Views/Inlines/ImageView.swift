@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16, *)
 struct ImageView: View {
   @Environment(\.theme.image) private var image
   @Environment(\.imageProvider) private var imageProvider
@@ -48,6 +49,7 @@ struct ImageView: View {
   }
 }
 
+@available(iOS 16, *)
 extension ImageView {
   init?(_ inlines: [InlineNode]) {
     guard inlines.count == 1, let data = inlines.first?.imageData else {

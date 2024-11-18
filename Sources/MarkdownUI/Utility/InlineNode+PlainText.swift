@@ -1,5 +1,6 @@
 import Foundation
 
+@available(iOS 16, *)
 extension Sequence where Element == InlineNode {
   func renderPlainText() -> String {
     self.collect { inline in

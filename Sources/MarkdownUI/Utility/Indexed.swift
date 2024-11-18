@@ -8,6 +8,7 @@ struct Indexed<Value> {
 extension Indexed: Equatable where Value: Equatable {}
 extension Indexed: Hashable where Value: Hashable {}
 
+@available(iOS 16, *)
 extension Sequence {
   func indexed() -> [Indexed<Element>] {
     zip(0..., self).map { index, value in
