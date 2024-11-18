@@ -1,11 +1,16 @@
 import SwiftUI
 
+@available(iOS 16, *)
 struct InlineText: View {
   @Environment(\.inlineImageProvider) private var inlineImageProvider
   @Environment(\.baseURL) private var baseURL
   @Environment(\.imageBaseURL) private var imageBaseURL
   @Environment(\.softBreakMode) private var softBreakMode
   @Environment(\.theme) private var theme
+  @Environment(\.latexMode) private var latexMode
+  
+  @Environment(\.font) private var font
+  @Environment(\.displayScale) private var displayScale
 
   @State private var inlineImages: [String: Image] = [:]
 
@@ -28,7 +33,10 @@ struct InlineText: View {
         ),
         images: self.inlineImages,
         softBreakMode: self.softBreakMode,
-        attributes: attributes
+        attributes: attributes,
+        latexMode: latexMode,
+        font: font ?? .body,
+        displayScale: displayScale
       )
     }
     .task(id: self.inlines) {
