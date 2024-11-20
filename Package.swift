@@ -21,7 +21,7 @@ let package = Package(
     .package(url: "https://github.com/gonzalezreal/NetworkImage", from: "6.0.0"),
     .package(url: "https://github.com/pointfreeco/swift-snapshot-testing", from: "1.10.0"),
     .package(url: "https://github.com/swiftlang/swift-cmark", from: "0.4.0"),
-    .package(url: "https://github.com/tranleduy2000/LaTeXSwiftUI.git", revision: "2293cdf2bd4e275c207bd3ffe9cb3cbd332f1ba8"),
+    .package(url: "https://github.com/tranleduy2000/LaTeXSwiftUI.git", revision: "10624752f736c73fee0e04713771c2a7263bb35e"),
     //.package(path: "../LaTeXSwiftUI"),
   ],
   targets: [

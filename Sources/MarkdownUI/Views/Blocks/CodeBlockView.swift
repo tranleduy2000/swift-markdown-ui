@@ -13,11 +13,6 @@ struct CodeBlockView: View {
   init(fenceInfo: String?, content: String) {
     self.fenceInfo = fenceInfo
     self.content = content.hasSuffix("\n") ? String(content.dropLast()) : content
-    
-    if fenceInfo == "renderlatex" {
-      
-      print("latex", self.content)
-    }
   }
   
   var body: some View {
