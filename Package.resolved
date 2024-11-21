@@ -5,7 +5,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tranleduy2000/LaTeXSwiftUI.git",
       "state" : {
-        "revision" : "10624752f736c73fee0e04713771c2a7263bb35e"
+        "revision" : "a0406a3caa68c9589127eca058fac44c181db31c"
       }
     },
     {
@@ -42,6 +42,15 @@
       "state" : {
         "revision" : "950167445ab703740569869c8b7510efc9d09a26",
         "version" : "1.7.0"
+      }
+    },
+    {
+      "identity" : "svgview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/exyte/SVGView",
+      "state" : {
+        "revision" : "6465962facdd25cb96eaebc35603afa2f15d2c0d",
+        "version" : "1.0.6"
       }
     },
     {
